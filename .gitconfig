@@ -1,0 +1,53 @@
+[include]
+    path = .gitconfig.local
+[push]
+    default = simple
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+    sparsecheckout = true
+    autocrlf = false
+    eol = lf
+[gui]
+    encoding = utf-8
+[i18n]
+    logOutputEncoding = utf-8
+[color]
+    ui = auto
+    interactive = auto
+[alias]
+    co = checkout
+    cob = checkout -b
+    c = commit
+    s = status -sb
+    b = branch
+    a = add
+    f = fetch --all --prune
+    sm = submodule
+    ps = push
+    pd = push --delete
+    pl = pull
+    cm = commit -m
+    ca = commit -a
+    di = diff --color-words
+    d  = diff --color-words
+    l  = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    ll = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s%n %C(white)- %an, %ar%Creset'
+    logall = log --decorate  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    c = commit 
+    dst = !git d --staged
+    la = !git l --all
+    graph = log --graph
+    logall = log --decorate  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+    conf = config
+    confg = config --global
+    confls = config -l --includes
+    rem = remote
+    user = !git config user.name suisho && git config user.email suisho000000@gmail.com && git commit --amend --reset-author
+    meff = merge --ff-only
+    ffm = merge --ff-only
+    fa = fetch --all
+    fep = fetch --prune
+    bb = !git branch $1
+[github]
+	user = suisho
