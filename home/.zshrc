@@ -70,7 +70,6 @@ alias tm=tmux
 alias be='bundle exec'
 alias komodo='/Applications/Komodo\ Edit\ 8.app/Contents/MacOS/komodo'
 
-
 # attribute aliases
 alias resource='source /Users/suisho/.zshrc'
 alias chefkura='cd /Users/suisho/Dropbox/github/kura/chefkura;bundle exec rake chef:solo;cd - '
@@ -84,13 +83,13 @@ export PATH=$(brew --prefix)/sbin:$PATH
 export PATH=$(brew --prefix)/bin:$PATH
 export PAHT=$(brew --prefix)/share/npm/bin:$PATH
 export PATH=$(brew --prefix ruby)/bin:$PATH
-export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
+#export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
 export PATH=~/.cabal/bin:$PATH
 
 export EDITOR=$(which vim)
 
 # pig
-export JAVA_HOME="$(/usr/libexec/java_home)"
+#export JAVA_HOME="$(/usr/libexec/java_home)"
 
 
 # brew

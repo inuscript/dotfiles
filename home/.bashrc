@@ -36,16 +36,18 @@ alias resource='source /Users/suisho/.bashrc'
 alias chefkura='cd /Users/suisho/Dropbox/github/kura/chefkura;bundle exec rake chef:solo;cd - '
 
 
+if type -P brew >/dev/null then
+  # for rabbitmq
+  export PATH=$(brew --prefix)/sbin:$PATH
 
-# for rabbitmq
-export PATH=$(brew --prefix)/sbin:$PATH
-
-# for brew
-export PATH=$(brew --prefix)/bin:$PATH
-export PAHT=$(brew --prefix)/share/npm/bin:$PATH
-export PATH=$(brew --prefix ruby)/bin:$PATH
-export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
-export PATH=~/.cabal/bin:$PATH
+  # for brew
+  export PATH=$(brew --prefix)/bin:$PATH
+  export PAHT=$(brew --prefix)/share/npm/bin:$PATH
+  export PATH=$(brew --prefix ruby)/bin:$PATH
+  export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
+  export PATH=~/.cabal/bin:$PATH
+else
+fi
 
 export EDITOR=$(which vim)
 
