@@ -46,7 +46,6 @@ if type -P brew >/dev/null then
   export PATH=$(brew --prefix ruby)/bin:$PATH
   export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
   export PATH=~/.cabal/bin:$PATH
-else
 fi
 
 export EDITOR=$(which vim)
