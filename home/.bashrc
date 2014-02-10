@@ -36,7 +36,7 @@ alias resource='source /Users/suisho/.bashrc'
 alias chefkura='cd /Users/suisho/Dropbox/github/kura/chefkura;bundle exec rake chef:solo;cd - '
 
 
-if type -P brew >/dev/null then
+if which brew >/dev/null 2>&1; then
   # for rabbitmq
   export PATH=$(brew --prefix)/sbin:$PATH
 
@@ -46,6 +46,7 @@ if type -P brew >/dev/null then
   export PATH=$(brew --prefix ruby)/bin:$PATH
   export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
   export PATH=~/.cabal/bin:$PATH
+else
 fi
 
 export EDITOR=$(which vim)
