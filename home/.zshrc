@@ -74,7 +74,11 @@ alias komodo='/Applications/Komodo\ Edit\ 8.app/Contents/MacOS/komodo'
 alias resource='source /Users/suisho/.zshrc'
 alias chefkura='cd /Users/suisho/Dropbox/github/kura/chefkura;bundle exec rake chef:solo;cd - '
 
-
+# for mac
+bindkey "[D" backward-word
+bindkey "[C" forward-word
+bindkey "^[a" beginning-of-line
+bindkey "^[e" end-of-line
 
 # for rabbitmq
 export PATH=$(brew --prefix)/sbin:$PATH
