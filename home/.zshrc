@@ -67,6 +67,7 @@ alias gt='git'
 alias repache='sudo sevice apache2 reload'
 alias em='emacs -nw'
 alias tm=tmux
+alias b='bundle'
 alias be='bundle exec'
 alias komodo='/Applications/Komodo\ Edit\ 8.app/Contents/MacOS/komodo'
 
