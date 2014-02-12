@@ -15,9 +15,15 @@ fi
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 
-if [ -d ~/.rbenv ]; then
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
+#if [ -d ~/.rbenv ]; then
+#    export PATH="$HOME/.rbenv/bin:$PATH"
+#    eval "$(rbenv init -)"
+#fi
+
+#chruby
+if [ -d /usr/local/opt/chruby ]; then
+    source /usr/local/opt/chruby/share/chruby/chruby.sh
+    source /usr/local/opt/chruby/share/chruby/auto.sh
 fi
 
 alias ls="ls -G"

@@ -103,6 +103,11 @@ fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 autoload -U compinit
 compinit -u
 
+# chruby
+if [ -d /usr/local/opt/chruby ]; then
+    source /usr/local/opt/chruby/share/chruby/chruby.sh
+    source /usr/local/opt/chruby/share/chruby/auto.sh
+fi
 # include local
 if [ -f ~/.zsh_local ]; then
     . ~/.zsh_local
