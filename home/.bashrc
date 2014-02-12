@@ -49,6 +49,3 @@ if which brew > /dev/null 2>&1; then
 fi
 
 export EDITOR=$(which vim)
-
-# pig
-export JAVA_HOME="$(/usr/libexec/java_home)"
