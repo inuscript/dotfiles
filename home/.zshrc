@@ -40,7 +40,7 @@ ZSH_THEME="kphoen"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -72,7 +72,7 @@ alias be='bundle exec'
 alias komodo='/Applications/Komodo\ Edit\ 8.app/Contents/MacOS/komodo'
 
 # attribute aliases
-alias resource='source /Users/suisho/.zshrc'
+alias resource='source ~/.zshrc'
 alias chefkura='cd /Users/suisho/Dropbox/github/kura/chefkura;bundle exec rake chef:solo;cd - '
 
 # for mac
