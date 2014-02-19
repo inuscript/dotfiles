@@ -107,6 +107,7 @@ compinit -u
 if [ -d /usr/local/opt/chruby ]; then
     source /usr/local/opt/chruby/share/chruby/chruby.sh
     source /usr/local/opt/chruby/share/chruby/auto.sh
+    chruby 2.0
 fi
 # include local
 if [ -f ~/.zsh_local ]; then
