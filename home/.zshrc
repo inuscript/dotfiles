@@ -167,3 +167,6 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
+if [ -d ~/.zsh/git-flow-completion ]; then
+  source ~/.zsh/git-flow-completion/git-flow-completion.zsh
+fi

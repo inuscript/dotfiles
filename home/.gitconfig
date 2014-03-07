@@ -18,6 +18,9 @@
 [alias]
     co = checkout
     cob = checkout -b
+    # 指定した場所からfeature切る
+    cobm = !git branch feature/$1 $(git config --get feature.master) && git checkout feature/$1
+    pusho = !git push origin -u $(git symbolic-ref --short HEAD)
     c = commit
     s = status -sb
     b = branch
@@ -34,7 +37,7 @@
     l  = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
     ll = log --graph  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s%n %C(white)- %an, %ar%Creset'
     logall = log --decorate  --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
-    c = commit 
+    c = commit
     dst = !git d --staged
     la = !git l --all
     graph = log --graph
