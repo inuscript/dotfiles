@@ -2,3 +2,7 @@ memo/*
 .DS_Store
 .ruby-version
 *.sublime-*
+*.komodoproject
+node_modules/
+Gruntfile
+gulpfile.js
