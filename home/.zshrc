@@ -92,6 +92,7 @@ export PATH=$(brew --prefix ruby)/bin:$PATH
 #export PATH=~/.cabal/bin:$PATH
 
 export EDITOR=$(which vim)
+export PATH=~/.gitcommands:$PATH
 
 # pig
 #export JAVA_HOME="$(/usr/libexec/java_home)"
@@ -170,3 +171,4 @@ fi
 if [ -d ~/.zsh/git-flow-completion ]; then
   source ~/.zsh/git-flow-completion/git-flow-completion.zsh
 fi
+
