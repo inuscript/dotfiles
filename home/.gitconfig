@@ -18,8 +18,6 @@
 [alias]
     co = checkout
     cob = checkout -b
-    # 指定した場所からfeature切る
-    comb = !git branch feature/$1 $(git config --get feature.master) && git checkout feature/$1
     pusho = !git push origin -u $(git symbolic-ref --short HEAD)
     c = commit
     s = status -sb
@@ -52,5 +50,9 @@
     fa = fetch --all
     fep = fetch --prune
     bb = !git branch $1
+
+    # 指定した場所からfeature切る
+    bog = !A = $(git config --get comb.master) ; echo ${A}
+    
 [github]
 	user = suisho

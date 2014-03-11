@@ -1,0 +1,8 @@
+#!/bin/bash
+GREP=$1
+FEATURE=$(git config --get hello.feature)
+FEATURE=${FEATURE:=feature}
+
+GREP=${GREP:=${FEATURE}}
+MERGED=$(git branch --merged devel | grep ${GREP}/)
+git branch -d ${MERGED}
