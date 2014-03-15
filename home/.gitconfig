@@ -1,7 +1,7 @@
 [include]
     path = .gitconfig.local
 [push]
-    default = simple
+    default = current
 [core]
     excludesfile = ~/.gitignore
     editor = vim
