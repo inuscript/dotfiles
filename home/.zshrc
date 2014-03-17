@@ -64,13 +64,14 @@ alias ls="ls -G"
 alias ll='ls -la'
 alias gep='gep --colo=auto'
 alias gt='git'
+alias z='zeus'
 alias repache='sudo sevice apache2 reload'
 alias em='emacs -nw'
 alias tm=tmux
 alias b='bundle'
 alias be='bundle exec'
 alias komodo='/Applications/Komodo\ Edit\ 8.app/Contents/MacOS/komodo'
-
+alias subl='sublime *.sublime-project'
 # attribute aliases
 alias resource='source ~/.zshrc'
 alias chefkura='cd /Users/suisho/Dropbox/github/kura/chefkura;bundle exec rake chef:solo;cd - '
