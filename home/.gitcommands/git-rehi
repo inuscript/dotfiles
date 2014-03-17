@@ -1,0 +1,6 @@
+#!/bin/bash
+MASTER=$(git config --get hello.master)
+MASTER=${MASTER:=master}
+
+git checkout ${MASTER}
+git pull

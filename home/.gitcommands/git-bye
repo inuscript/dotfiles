@@ -1,4 +1,6 @@
 #!/bin/bash
+git pull --prune
+
 GREP=$1
 FEATURE=$(git config --get hello.feature)
 FEATURE=${FEATURE:=feature}
