@@ -1,0 +1,31 @@
+'editor':
+  'showIndentGuide': true
+  'fontSize': 17
+  'softWrap': true
+'core':
+  'themes': [
+    'atom-light-ui'
+    'solarized-light-syntax'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+    'node_modules'
+  ]
+  'disabledPackages': [
+    'metrics'
+  ]
+'exception-reporting':
+  'userId': '1e3980d8-541e-9861-2960-5a5992923571'
+'release-notes':
+  'viewedVersion': '0.78.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '89250323905af93ea067bf6fbb43427445ce5311'
+'feedback':
+  'email': 'suisho000000@gmail.com'
+'tree-view':
+  'hideVcsIgnoredFiles': true
+  'hideIgnoredNames': true
