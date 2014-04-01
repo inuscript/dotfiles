@@ -22,3 +22,19 @@
     //color : black;
   }
 }
+.cursor-line-no-selection{
+  color: red;
+}
+//
+// Syntax Hacking
+//
+@atomcasts-color_dark-orange: #cc7833;
+@atomcasts-color_keyword: @atomcasts-color_dark-orange;
+@keyword-color : @atomcasts-color_keyword;
+// javascript
+.js {
+  //var
+  &.modifier.storage {
+    color: @keyword-color;
+  }
+}

@@ -16,6 +16,18 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
-#'.platform-darwin':
-  '.editor':
-    'ctrl-d' : 'editor:duplicate-lines'
+'.workspace .editor:not(.mini)':
+  'cmd-d': 'editor:duplicate-lines'
+
+'body':
+  'shift-cmd-W': 'pane:close-other-items'
+
+'.editor':
+  'cmd-space': 'autocomplete:toggle'
+
+# swap
+'.platform-darwin .editor':
+  'cmd-p': 'symbols-view:toggle-file-symbols'
+
+'.platform-darwin':
+  'cmd-r': 'fuzzy-finder:toggle-file-finder'
