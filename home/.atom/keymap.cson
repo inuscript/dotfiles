@@ -20,9 +20,10 @@
   'cmd-d': 'editor:duplicate-lines'
 
 'body':
-  #'shift-cmd-W': 'pane:close-other-items'
-  'alt-cmd-w': 'pane:close-other-items'
-
+  'shift-cmd-W': 'pane:close-other-items'
+  #'alt-cmd-w': 'pane:close-other-items'
+  #'ctrl-shift-W': 'pane:close-other-items'
+  'alt-cmd-w': 'window:close'
 '.editor':
   'cmd-space': 'autocomplete:toggle'
 
@@ -32,6 +33,6 @@
 
 '.platform-darwin':
   'cmd-r': 'fuzzy-finder:toggle-file-finder'
-    
+
 '.platform-darwin .editor':
   'cmd-r': 'fuzzy-finder:toggle-file-finder'
