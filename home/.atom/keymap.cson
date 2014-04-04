@@ -26,7 +26,6 @@
   'alt-cmd-w': 'window:close'
 '.editor':
   'cmd-space': 'autocomplete:toggle'
-
 # swap
 '.platform-darwin .editor':
   'cmd-p': 'symbols-view:toggle-file-symbols'
@@ -36,3 +35,6 @@
 
 '.platform-darwin .editor':
   'cmd-r': 'fuzzy-finder:toggle-file-finder'
+
+'.platform-darwin, .platform-darwin .command-palette .editor':
+  'ctrl-[': 'command-palette:toggle' #default shift-cmd-P
