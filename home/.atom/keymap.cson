@@ -36,3 +36,6 @@
 
 '.platform-darwin .editor':
   'cmd-r': 'fuzzy-finder:toggle-file-finder'
+
+'.platform-darwin, .platform-darwin .command-palette .editor':
+  'ctrl-[': 'command-palette:toggle'
