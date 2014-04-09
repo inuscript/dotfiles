@@ -21,7 +21,7 @@
 
 'body':
   #'shift-cmd-W': 'pane:close-other-items'
-  'alt-cmd-w': 'pane:close-other-items'
+  'ctrl-w': 'pane:close-other-items'
   #'ctrl-shift-W': 'pane:close-other-items'
   #'alt-cmd-w': 'window:close'
 '.editor':
