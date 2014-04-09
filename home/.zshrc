@@ -76,6 +76,10 @@ alias subl='sublime *.sublime-project'
 alias resource='source ~/.zshrc'
 alias chefkura='cd /Users/suisho/Dropbox/github/kura/chefkura;bundle exec rake chef:solo;cd - '
 
+if [ `which rmtrash` ]; then
+  alias rm='rmtrash'
+fi
+
 # for mac
 bindkey "[D" backward-word
 bindkey "[C" forward-word
@@ -172,4 +176,3 @@ fi
 if [ -d ~/.zsh/git-flow-completion ]; then
   source ~/.zsh/git-flow-completion/git-flow-completion.zsh
 fi
-
