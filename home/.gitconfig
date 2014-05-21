@@ -18,6 +18,7 @@
 [alias]
     co = checkout
     cob = checkout -b
+    cot = checkout -t
     pusho = !git push origin -u $(git symbolic-ref --short HEAD)
     c = commit
     s = status -sb
@@ -53,6 +54,6 @@
 
     # 指定した場所からfeature切る
     bog = !A = $(git config --get comb.master) ; echo ${A}
-    
+
 [github]
 	user = suisho
