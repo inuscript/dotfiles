@@ -2,3 +2,4 @@ home/.atom/config.cson
 home/.atom/packages
 home/.atom/.node-gyp
 home/.atom/storage
+home/.atom/compile-cache
