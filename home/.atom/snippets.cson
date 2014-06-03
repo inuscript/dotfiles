@@ -13,3 +13,7 @@
 #     'prefix': 'log'
 #     'body': 'console.log $1'
 #
+'.source.js':
+  'Inspect':
+    'prefix' : 'inspect'
+    'body' : 'console.log(require("util").inspect($1, {depth:null}))'
