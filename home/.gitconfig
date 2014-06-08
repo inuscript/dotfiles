@@ -51,6 +51,7 @@
     fa = fetch --all
     fep = fetch --prune
     bb = !git branch $1
+    radigin = remote add origin
 
     # 指定した場所からfeature切る
     bog = !A = $(git config --get comb.master) ; echo ${A}
