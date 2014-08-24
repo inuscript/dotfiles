@@ -6,3 +6,4 @@ memo/*
 node_modules/
 Gruntfile
 gulpfile.js
+.idea/
