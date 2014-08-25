@@ -39,3 +39,6 @@
 
 '.platform-darwin, .platform-darwin .command-palette .editor':
   'ctrl-[': 'command-palette:toggle' #default shift-cmd-P
+
+'.editor':
+  'cmd-alt-r': 'rails-rspec:toggle-spec-file'

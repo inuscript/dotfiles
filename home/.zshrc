@@ -55,10 +55,10 @@ fi
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 
-if [ -d ~/.rbenv ]; then
-    export PATH="$HOME/.rbenv/bin:$PATH"
-    eval "$(rbenv init -)"
-fi
+#if [ -d ~/.rbenv ]; then
+#    export PATH="$HOME/.rbenv/bin:$PATH"
+#    eval "$(rbenv init -)"
+#fi
 
 alias ls="ls -G"
 alias ll='ls -la'
@@ -113,7 +113,7 @@ compinit -u
 if [ -d /usr/local/opt/chruby ]; then
     source /usr/local/opt/chruby/share/chruby/chruby.sh
     source /usr/local/opt/chruby/share/chruby/auto.sh
-    chruby 2.0
+    chruby 2.1
 fi
 # include local
 if [ -f ~/.zsh_local ]; then
@@ -176,3 +176,12 @@ fi
 if [ -d ~/.zsh/git-flow-completion ]; then
   source ~/.zsh/git-flow-completion/git-flow-completion.zsh
 fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### direnv
+eval "$(direnv hook zsh)"
+
+### pgsql
+export PGDATA=/usr/local/var/postgres

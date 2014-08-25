@@ -9,11 +9,36 @@
  */
 
 .tree-view {
-
+  font-size: 16px;
+}
+.settings-view{
+  font-size:14px;
 }
 
+// fix tabheight
+/*
+.tab-bar{
+  // height mixin
+  .tab-height(@p){
+    height:32px + @p;
+    line-height:32px - @p;
+  }
+
+  height:42px;
+  .tab,
+  .tab:before{
+    .tab-height(0px);
+  }
+  .tab.active,
+  .tab.active:before{
+    .tab-height(2px);
+  }
+}
+*/
+
+
 .editor {
-  //cursor : default;
+  cursor : default;
   .cursor{
     border-width: 3px;
     //border-radius: px;

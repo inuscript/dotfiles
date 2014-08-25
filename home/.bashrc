@@ -12,7 +12,7 @@ if [ -f ~/.nvm/nvm.sh ]; then
     . ~/.nvm/nvm.sh
     nvm alias default 0.8
 fi
-#export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 
 #if [ -d ~/.rbenv ]; then
@@ -55,3 +55,6 @@ if which brew > /dev/null 2>&1; then
 fi
 
 export EDITOR=$(which vim)
+
+### direnv
+eval "$(direnv hook zsh)"
