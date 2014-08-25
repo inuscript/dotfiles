@@ -60,3 +60,7 @@
 	user = suisho
 [credential]
 	helper = osxkeychain
+[merge "mergepbx"]
+	name = Xcode project files merger
+	driver = mergepbx %O %A %B
+	note = auto-generated configuration by `cpad manifest ios`
