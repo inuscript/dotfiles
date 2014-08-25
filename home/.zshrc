@@ -115,6 +115,12 @@ if [ -d /usr/local/opt/chruby ]; then
     source /usr/local/opt/chruby/share/chruby/auto.sh
     chruby 2.1
 fi
+if [ -d /usr/local/share/chruby ]; then
+    source /usr/local/share/chruby/chruby.sh
+    source /usr/local/share/chruby/auto.sh
+#    chruby 2.0
+fi
+
 # include local
 if [ -f ~/.zsh_local ]; then
     . ~/.zsh_local
