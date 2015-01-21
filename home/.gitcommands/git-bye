@@ -4,7 +4,10 @@ git pull --prune
 GREP=$1
 FEATURE=$(git config --get hello.feature)
 FEATURE=${FEATURE:=feature}
+MASTER=$(git config --get hello.master)
+MASTER=${MASTER:=master}
+
 
 GREP=${GREP:=${FEATURE}}
-MERGED=$(git branch --merged devel | grep ${GREP}/)
+MERGED=$(git branch --merged ${MASTER} | grep ${GREP}/)
 git branch -d ${MERGED}
