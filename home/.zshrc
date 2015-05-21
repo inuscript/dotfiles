@@ -187,7 +187,7 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### direnv
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 ### pgsql
 export PGDATA=/usr/local/var/postgres
