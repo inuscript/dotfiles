@@ -58,5 +58,8 @@
 
 [github]
 	user = suisho
+[user]
+	name = suisho
+	email = suisho000000@gmail.com
 [credential]
 	helper = osxkeychain
