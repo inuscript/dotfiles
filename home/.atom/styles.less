@@ -1,12 +1,12 @@
 /*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed.
- *
- * If you are unfamiliar with LESS, you can read more about it here:
- * http://www.lesscss.org
- */
+* Your Stylesheet
+*
+* This stylesheet is loaded when Atom starts up and is reloaded automatically
+* when it is changed.
+*
+* If you are unfamiliar with LESS, you can read more about it here:
+* http://www.lesscss.org
+*/
 
 .tree-view {
   font-size: 16px;
@@ -18,22 +18,22 @@
 // fix tabheight
 /*
 .tab-bar{
-  // height mixin
-  .tab-height(@p){
-    height:32px + @p;
-    line-height:32px - @p;
-  }
+// height mixin
+.tab-height(@p){
+height:32px + @p;
+line-height:32px - @p;
+}
 
-  height:42px;
-  .tab,
-  .tab:before{
-    .tab-height(0px);
-  }
-  .tab.active,
-  .tab.active:before{
-    .tab-height(2px);
-  }
-  font-size:16px;
+height:42px;
+.tab,
+.tab:before{
+.tab-height(0px);
+}
+.tab.active,
+.tab.active:before{
+.tab-height(2px);
+}
+font-size:16px;
 }
 */
 
@@ -58,19 +58,21 @@
 @atomcasts-color_keyword: @atomcasts-color_dark-orange;
 @keyword-color : @atomcasts-color_keyword;
 // javascript
-.js {
-  //var
-  &.modifier.storage {
-    color: @keyword-color;
+::shadow{
+  .js {
+    //var
+    &.modifier.storage {
+      color: @keyword-color;
+    }  
   }
-}
 
-.line {
-  .trailing-whitespace{
-    background-color: #F92672;
-    color: white;
-  }
- .invisible-character:last-child:not(.indent-guide){
-    opacity:0;
+  .line {
+    .trailing-whitespace{
+      background-color: #F92672;  
+      color: white;
+    }
+    .invisible-character:last-child:not(.indent-guide){
+      opacity:0;
+    }
   }
 }
