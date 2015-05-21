@@ -6,4 +6,5 @@ memo/*
 node_modules/
 Gruntfile
 gulpfile.js
+.remote-sync.json
 .idea/

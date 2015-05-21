@@ -1,0 +1,8 @@
+{
+    "generator-assets":  {
+        "svg-enabled": true,
+        "svgomg-enabled" :true,
+        "webp-enabled": true,
+        "use-smart-scaling" :true
+    }
+}

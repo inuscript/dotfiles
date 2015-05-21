@@ -1,3 +1,5 @@
+
+
 # Your keymap
 #
 # Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
@@ -42,3 +44,7 @@
 
 '.editor':
   'cmd-alt-r': 'rails-rspec:toggle-spec-file'
+
+'.autocomplete-plus input.hidden-input':
+  'enter': 'autocomplete-plus:confirm'
+

@@ -73,6 +73,13 @@ font-size:16px;
     }
     .invisible-character:last-child:not(.indent-guide){
       opacity:0;
+      // color: gray;
+    }
+    .invisible-character:not(.indent-guide){
+      color:gray;
+    }
+    .selection .region{
+      background: fade(@atomcasts-color_dark-orange, 20%);
     }
   }
 }

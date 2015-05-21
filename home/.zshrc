@@ -191,3 +191,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### pgsql
 export PGDATA=/usr/local/var/postgres
+
+
+#source .util/set_term_bgcolor.sh
+
+#set_term_bgcolor 0 0 40
