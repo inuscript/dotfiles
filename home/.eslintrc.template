@@ -1,0 +1,13 @@
+env:
+  browser: true
+  es6: true
+  node: true
+ecmaFeatures:
+  jsx: true
+  modules: true
+rules:
+  semi: 0
+  no-unused-vars: 0
+  strict: 0
+	quotes: 0
+	new-cap: 0
