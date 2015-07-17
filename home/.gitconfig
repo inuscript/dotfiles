@@ -57,11 +57,11 @@
     # 指定した場所からfeature切る
     bog = !A = $(git config --get comb.master) ; echo ${A}
 
-[github]
-	user = suisho
+# [github]
+#	user = suisho
 [user]
-	name = suisho
-	email = suisho000000@gmail.com
+	name = inuscript
+	email = inuscript@gmail.com
 [credential]
 	helper = osxkeychain
 [merge "mergepbx"]
