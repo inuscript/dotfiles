@@ -5,6 +5,7 @@ memo/*
 *.komodoproject
 node_modules/
 Gruntfile
-gulpfile.js
 .remote-sync.json
 .idea/
+.eslintrc
+.atom/.apm
