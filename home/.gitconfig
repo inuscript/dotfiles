@@ -46,6 +46,7 @@
     confls = config -l --includes
     rem = remote
     user = !git config user.name suisho && git config user.email suisho000000@gmail.com && git commit --amend --reset-author
+    inu = !git config user.name inuscript && git config user.email inuscript@gmail.com && git commit --amend --reset-author
     meff = merge --ff-only
     ffm = merge --ff-only
     fa = fetch --all
@@ -59,6 +60,9 @@
 
 [github]
 	user = suisho
+[user]
+	name = suisho
+	email = suisho000000@gmail.com
 [credential]
 	helper = osxkeychain
 [merge "mergepbx"]
@@ -66,3 +70,6 @@
 	driver = mergepbx %O %A %B
 	note = auto-generated configuration by `cpad manifest ios`
 
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
