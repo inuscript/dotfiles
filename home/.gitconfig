@@ -52,6 +52,7 @@
     fep = fetch --prune
     bb = !git branch $1
     radigin = remote add origin
+    cop = "!f(){ git checkout -b $(git rev-parse --abbrev-ref HEAD)-$1; }; f"
 
     # 指定した場所からfeature切る
     bog = !A = $(git config --get comb.master) ; echo ${A}
