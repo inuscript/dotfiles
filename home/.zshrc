@@ -187,7 +187,7 @@ fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 ### direnv
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 ### pgsql
 export PGDATA=/usr/local/var/postgres
@@ -196,3 +196,10 @@ export PGDATA=/usr/local/var/postgres
 #source .util/set_term_bgcolor.sh
 
 #set_term_bgcolor 0 0 40
+
+
+if [ -x "`which go`" ]; then
+       export GOROOT=`go env GOROOT`
+       export GOPATH=$HOME/code/go-local
+       export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
