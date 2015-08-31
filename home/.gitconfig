@@ -45,7 +45,6 @@
     confg = config --global
     confls = config -l --includes
     rem = remote
-    user = !git config user.name suisho && git config user.email suisho000000@gmail.com && git commit --amend --reset-author
     inu = !git config user.name inuscript && git config user.email inuscript@gmail.com && git commit --amend --reset-author
     meff = merge --ff-only
     ffm = merge --ff-only
@@ -72,3 +71,7 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true

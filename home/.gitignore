@@ -4,8 +4,8 @@ memo/*
 *.sublime-*
 *.komodoproject
 node_modules/
-Gruntfile
-gulpfile.js
+// Gruntfile
+// gulpfile.js
 .remote-sync.json
 .idea/
 .atom/.apm
