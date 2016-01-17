@@ -196,3 +196,10 @@ export PGDATA=/usr/local/var/postgres
 #source .util/set_term_bgcolor.sh
 
 #set_term_bgcolor 0 0 40
+
+#cuda
+#export PATH=/usr/local/cuda/bin:$PATH
+#export DYLD_LIBRARY_PATH=/usr/local/cuda/lib
+#export LD_LIBRARY_PATH=/usr/local/cuda/lib:$LD_LIBRARY_PATH
+#export CPLUS_INCLUDE_PATH="/Developer/GPU Computing/C/common/inc":$CPLUS_INCLUDE_PATH
+#export C_INCLUDE_PATH="/Developer/GPU Computing/C/common/inc":$C_INCLUDE_PATH
