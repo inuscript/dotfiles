@@ -113,12 +113,12 @@ compinit -u
 if [ -d /usr/local/opt/chruby ]; then
     source /usr/local/opt/chruby/share/chruby/chruby.sh
     source /usr/local/opt/chruby/share/chruby/auto.sh
-    chruby 2.1
+    chruby 2.2
 fi
 if [ -d /usr/local/share/chruby ]; then
     source /usr/local/share/chruby/chruby.sh
     source /usr/local/share/chruby/auto.sh
-#    chruby 2.0
+#    chruby 2.2
 fi
 
 # include local
@@ -203,3 +203,6 @@ if [ -x "`which go`" ]; then
        export GOPATH=$HOME/code/go-local
        export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 fi
+
+#nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
