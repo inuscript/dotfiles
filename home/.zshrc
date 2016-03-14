@@ -203,3 +203,7 @@ export PGDATA=/usr/local/var/postgres
 #export LD_LIBRARY_PATH=/usr/local/cuda/lib:$LD_LIBRARY_PATH
 #export CPLUS_INCLUDE_PATH="/Developer/GPU Computing/C/common/inc":$CPLUS_INCLUDE_PATH
 #export C_INCLUDE_PATH="/Developer/GPU Computing/C/common/inc":$C_INCLUDE_PATH
+
+#Go
+export GOPATH=$HOME/code/gopath
+export PATH=$PATH:$GOPATH/bin
