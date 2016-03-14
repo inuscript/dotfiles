@@ -1,3 +1,5 @@
+@import "ui-variables";
+
 /*
 * Your Stylesheet
 *
@@ -12,7 +14,7 @@
   font-size: 16px;
 }
 .settings-view{
-  font-size:14px;
+  font-size: 14px;
 }
 
 // fix tabheight
@@ -54,21 +56,21 @@ font-size:16px;
 //
 // Syntax Hacking
 //
-@atomcasts-color_dark-orange: #cc7833;
-@atomcasts-color_keyword: @atomcasts-color_dark-orange;
-@keyword-color : @atomcasts-color_keyword;
+// @atomcasts-color_dark-orange: #cc7833;
+// @atomcasts-color_keyword: @atomcasts-color_dark-orange;
+// @keyword-color : @atomcasts-color_keyword;
 // javascript
 ::shadow{
-  .js {
-    //var
-    &.modifier.storage {
-      color: @keyword-color;
-    }  
-  }
-
+  // .js {
+  //   //var
+  //   &.modifier.storage {
+  //     color: @keyword-color;
+  //   }
+  // }
   .line {
     .trailing-whitespace{
-      background-color: #F92672;  
+      background-color: red;   
+      background-color: @background-color-warning;   
       color: white;
     }
     .invisible-character:last-child:not(.indent-guide){
@@ -79,7 +81,7 @@ font-size:16px;
       color:gray;
     }
     .selection .region{
-      background: fade(@atomcasts-color_dark-orange, 20%);
+      // background: fade(@atomcasts-color_dark-orange, 20%);
     }
   }
 }

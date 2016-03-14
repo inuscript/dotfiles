@@ -4,6 +4,7 @@ memo/*
 *.sublime-*
 *.komodoproject
 node_modules/
+
 Gruntfile
 .remote-sync.json
 .idea/

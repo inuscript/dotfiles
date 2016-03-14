@@ -45,7 +45,6 @@
     confg = config --global
     confls = config -l --includes
     rem = remote
-    user = !git config user.name suisho && git config user.email suisho000000@gmail.com && git commit --amend --reset-author
     inu = !git config user.name inuscript && git config user.email inuscript@gmail.com && git commit --amend --reset-author
     meff = merge --ff-only
     ffm = merge --ff-only
@@ -58,7 +57,8 @@
     bog = !A = $(git config --get comb.master) ; echo ${A}
     bt = !git for-each-ref --sort='-*committerdate' --format='%(authordate:iso8601) %(refname:short)' refs/heads/ | sort
 [github]
-[user]
+	name = inuscript
+	email = inuscript@gmail.com
 [credential]
     helper = osxkeychain
 [merge "mergepbx"]
