@@ -18,32 +18,31 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
-'.workspace .editor:not(.mini)':
+'atom-workspace atom-text-editor:not([mini])':
   'cmd-d': 'editor:duplicate-lines'
 
 'body':
   #'shift-cmd-W': 'pane:close-other-items'
   'ctrl-w': 'pane:close-other-items'
   #'alt-cmd-w': 'window:close'
-'.editor':
+'.atom-text-editor':
   'cmd-space': 'autocomplete:toggle'
   'ctrl-shift-W': 'pane:close-other-items'
+  'cmd-alt-r': 'rails-rspec:toggle-spec-file'
 
 # swap
-'.platform-darwin .editor':
+'.platform-darwin atom-text-editor':
   'cmd-p': 'symbols-view:toggle-file-symbols'
 
 '.platform-darwin':
   'cmd-r': 'fuzzy-finder:toggle-file-finder'
 
-'.platform-darwin .editor':
+'.platform-darwin atom-text-editor':
   'cmd-r': 'fuzzy-finder:toggle-file-finder'
 
-'.platform-darwin, .platform-darwin .command-palette .editor':
+'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
   'ctrl-[': 'command-palette:toggle' #default shift-cmd-P
 
-'.editor':
-  'cmd-alt-r': 'rails-rspec:toggle-spec-file'
 
 '.autocomplete-plus input.hidden-input':
   'enter': 'autocomplete-plus:confirm'

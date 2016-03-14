@@ -4,8 +4,12 @@ memo/*
 *.sublime-*
 *.komodoproject
 node_modules/
-// Gruntfile
-// gulpfile.js
+
+Gruntfile
 .remote-sync.json
 .idea/
 .atom/.apm
+.secret/
+
+# tmp
+config/environments/migration.rb

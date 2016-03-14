@@ -113,12 +113,12 @@ compinit -u
 if [ -d /usr/local/opt/chruby ]; then
     source /usr/local/opt/chruby/share/chruby/chruby.sh
     source /usr/local/opt/chruby/share/chruby/auto.sh
-    chruby 2.1
+    chruby 2.2
 fi
 if [ -d /usr/local/share/chruby ]; then
     source /usr/local/share/chruby/chruby.sh
     source /usr/local/share/chruby/auto.sh
-#    chruby 2.0
+#    chruby 2.2
 fi
 
 # include local
@@ -197,13 +197,15 @@ export PGDATA=/usr/local/var/postgres
 
 #set_term_bgcolor 0 0 40
 
-#cuda
-#export PATH=/usr/local/cuda/bin:$PATH
-#export DYLD_LIBRARY_PATH=/usr/local/cuda/lib
-#export LD_LIBRARY_PATH=/usr/local/cuda/lib:$LD_LIBRARY_PATH
-#export CPLUS_INCLUDE_PATH="/Developer/GPU Computing/C/common/inc":$CPLUS_INCLUDE_PATH
-#export C_INCLUDE_PATH="/Developer/GPU Computing/C/common/inc":$C_INCLUDE_PATH
-
 #Go
 export GOPATH=$HOME/code/gopath
 export PATH=$PATH:$GOPATH/bin
+
+if [ -x "`which go`" ]; then
+       export GOROOT=`go env GOROOT`
+       export GOPATH=$HOME/code/go-local
+       export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
+
+#nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH

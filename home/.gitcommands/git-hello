@@ -5,10 +5,12 @@ FEATURE=$(git config --get hello.feature)
 # default value
 MASTER=${MASTER:=master}
 ORIGIN=${ORIGIN:=origin}
-FEATURE=${FEATURE:=feature}
+# FEATURE=${FEATURE:=feature}
 
-echo "Switch branch ${ORIGIN}/${MASTER} -> ${FEATURE}/$1"
+[ -n "$FEATURE" ] && FEATURE="${FEATURE}/$1" || FEATURE="$1"
 
-git branch ${FEATURE}/$1 ${ORIGIN}/${MASTER}
-git checkout ${FEATURE}/$1
-git branch --unset-upstream ${FEATURE}/$1
+echo "Switch branch ${ORIGIN}/${MASTER} -> ${FEATURE}"
+
+git branch ${FEATURE} ${ORIGIN}/${MASTER}
+git checkout ${FEATURE}
+git branch --unset-upstream ${FEATURE}

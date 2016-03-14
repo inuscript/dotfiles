@@ -48,32 +48,30 @@
     inu = !git config user.name inuscript && git config user.email inuscript@gmail.com && git commit --amend --reset-author
     meff = merge --ff-only
     ffm = merge --ff-only
-    fa = fetch --all
-    fep = fetch --prune
+    fa = fetch --all --prune
     bb = !git branch $1
     radigin = remote add origin
+    cop = "!f(){ git checkout -b $(git rev-parse --abbrev-ref HEAD)-$1; }; f"
 
     # 指定した場所からfeature切る
     bog = !A = $(git config --get comb.master) ; echo ${A}
-
-# [github]
-#	user = suisho
-[user]
+    bt = !git for-each-ref --sort='-*committerdate' --format='%(authordate:iso8601) %(refname:short)' refs/heads/ | sort
+[github]
 	name = inuscript
 	email = inuscript@gmail.com
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
 [merge "mergepbx"]
-	name = Xcode project files merger
-	driver = mergepbx %O %A %B
-	note = auto-generated configuration by `cpad manifest ios`
+    name = Xcode project files merger
+    driver = mergepbx %O %A %B
+    note = auto-generated configuration by `cpad manifest ios`
 
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
 [fetch]
 	prune = true

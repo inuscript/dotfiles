@@ -4,3 +4,4 @@ home/.atom/.node-gyp
 home/.atom/storage
 home/.atom/blob-store
 home/.atom/compile-cache
+home/.atom/blob-store/
