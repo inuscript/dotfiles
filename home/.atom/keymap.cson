@@ -18,8 +18,9 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
-'atom-workspace atom-text-editor:not([mini])':
-  'cmd-d': 'editor:duplicate-lines'
+# 'atom-workspace atom-text-editor:not([mini])':
+# 'atom-workspace atom-text-editor:not([mini])':
+#   'cmd-d': 'editor:duplicate-lines'
 
 'body':
   #'shift-cmd-W': 'pane:close-other-items'

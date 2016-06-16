@@ -10,6 +10,7 @@ Gruntfile
 .idea/
 .atom/.apm
 .secret/
+npm-debug.log
 
 # tmp
 config/environments/migration.rb

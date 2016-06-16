@@ -55,7 +55,7 @@
 
     # 指定した場所からfeature切る
     bog = !A = $(git config --get comb.master) ; echo ${A}
-    bt = !git for-each-ref --sort='-*committerdate' --format='%(authordate:iso8601) %(refname:short)' refs/heads/ | sort
+    bt = !git for-each-ref --sort='-*committerdate' --format='%(authordate:iso8601) %(refname:short)' refs/ | sort
 [github]
 	name = inuscript
 	email = inuscript@gmail.com
@@ -75,3 +75,5 @@
     required = true
 [fetch]
 	prune = true
+[diff]
+	compactionHeuristic = true
