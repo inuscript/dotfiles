@@ -77,3 +77,7 @@
 	prune = true
 [diff]
 	compactionHeuristic = true
+[merge]
+	conflictstyle = diff3
+[rerere]
+	enabled = true
