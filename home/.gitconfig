@@ -56,6 +56,7 @@
     # 指定した場所からfeature切る
     bog = !A = $(git config --get comb.master) ; echo ${A}
     bt = !git for-each-ref --sort='-*committerdate' --format='%(authordate:iso8601) %(refname:short)' refs/ | sort
+    conflict = diff --name-only --diff-filter=U
 [github]
 	name = inuscript
 	email = inuscript@gmail.com
