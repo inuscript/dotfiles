@@ -5,7 +5,7 @@
       "selected": true,
       "simple_modifications": {
         "caps_lock": "left_control",
-        "left_command": "left_control",
+        "left_command": "left_alt",
         "left_control":"left_command"
       }
     }
