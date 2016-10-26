@@ -11,6 +11,4 @@ Gruntfile
 .atom/.apm
 .secret/
 npm-debug.log
-
-# tmp
-config/environments/migration.rb
+yarn-error.log
