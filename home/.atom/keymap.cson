@@ -32,17 +32,15 @@
   'cmd-alt-r': 'rails-rspec:toggle-spec-file'
 
 # swap
-'.platform-darwin atom-text-editor':
-  'cmd-p': 'symbols-view:toggle-file-symbols'
+# '.platform-darwin atom-text-editor':
+#   'cmd-p': 'symbols-view:toggle-file-symbols'
+#   'cmd-r': 'fuzzy-finder:toggle-file-finder'
 
-'.platform-darwin':
-  'cmd-r': 'fuzzy-finder:toggle-file-finder'
+# '.platform-darwin':
+#   'cmd-r': 'fuzzy-finder:toggle-file-finder'
 
-'.platform-darwin atom-text-editor':
-  'cmd-r': 'fuzzy-finder:toggle-file-finder'
-
-'.platform-darwin, .platform-darwin .command-palette atom-text-editor':
-  'ctrl-[': 'command-palette:toggle' #default shift-cmd-P
+# '.platform-darwin, .platform-darwin .command-palette atom-text-editor':
+#   'ctrl-[': 'command-palette:toggle' #default shift-cmd-P
 
 
 '.autocomplete-plus input.hidden-input':
@@ -50,6 +48,4 @@
 
 'atom-workspace atom-text-editor:not([mini])':
   'alt-shift-up': 'editor:add-selection-above'
-
-'atom-workspace atom-text-editor:not([mini])':
   'alt-shift-down': 'editor:add-selection-below'
