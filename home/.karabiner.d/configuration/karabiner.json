@@ -34,7 +34,8 @@
                 "caps_lock": "left_control",
                 "japanese_eisuu": "f13",
                 "left_command": "left_alt",
-                "left_control": "left_command"
+                "left_control": "left_command",
+                "right_command": "right_control"
             }
         }
     ]
