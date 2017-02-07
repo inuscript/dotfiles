@@ -1,0 +1,7 @@
+config.cson
+packages
+.node-gyp
+storage
+blob-store
+compile-cache
+blob-store/
