@@ -86,3 +86,10 @@
 	log = diff-highlight | less
 	show = diff-highlight | less
 	diff = diff-highlight | less
+[interactive]
+	diffFilter = diff-highlight
+[user]
+	name = inuscript
+	email = inuscript@users.noreply.github.com
+[remote "origin"]
+	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
