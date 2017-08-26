@@ -61,7 +61,8 @@
 	name = inuscript
 	email = inuscript@gmail.com
 [credential]
-    helper = osxkeychain
+	helper = osxkeychain
+	useHttpPath = true
 [merge "mergepbx"]
     name = Xcode project files merger
     driver = mergepbx %O %A %B
@@ -78,8 +79,6 @@
 	prune = true
 [diff]
 	compactionHeuristic = true
-[merge]
-	conflictstyle = diff3
 [rerere]
 	enabled = true
 [pager]
