@@ -198,6 +198,14 @@
                         },
                         {
                             "from": {
+                                "key_code": "japanese_pc_katakana"
+                            },
+                            "to": {
+                                "key_code": "lang1"
+                            }
+                        },
+                        {
+                            "from": {
                                 "key_code": "japanese_pc_nfer"
                             },
                             "to": {
@@ -214,10 +222,10 @@
                         },
                         {
                             "from": {
-                                "key_code": "japanese_pc_katakana"
+                                "key_code": "left_control"
                             },
                             "to": {
-                                "key_code": "lang1"
+                                "key_code": "left_control"
                             }
                         }
                     ]
@@ -334,6 +342,14 @@
                 },
                 {
                     "from": {
+                        "key_code": "japanese_eisuu"
+                    },
+                    "to": {
+                        "key_code": "japanese_eisuu"
+                    }
+                },
+                {
+                    "from": {
                         "key_code": "left_command"
                     },
                     "to": {
@@ -354,14 +370,6 @@
                     },
                     "to": {
                         "key_code": "right_control"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "japanese_eisuu"
-                    },
-                    "to": {
-                        "key_code": "japanese_eisuu"
                     }
                 }
             ],
