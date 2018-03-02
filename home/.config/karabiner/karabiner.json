@@ -117,6 +117,55 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (rev 2)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_eisuu"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_command",
+                                        "lazy": true
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "japanese_kana"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -201,7 +250,7 @@
                                 "key_code": "japanese_pc_katakana"
                             },
                             "to": {
-                                "key_code": "lang1"
+                                "key_code": "left_command"
                             }
                         },
                         {
@@ -217,7 +266,7 @@
                                 "key_code": "japanese_pc_xfer"
                             },
                             "to": {
-                                "key_code": "lang2"
+                                "key_code": "right_command"
                             }
                         },
                         {
@@ -338,14 +387,6 @@
                     },
                     "to": {
                         "key_code": "left_control"
-                    }
-                },
-                {
-                    "from": {
-                        "key_code": "japanese_eisuu"
-                    },
-                    "to": {
-                        "key_code": "japanese_eisuu"
                     }
                 },
                 {
