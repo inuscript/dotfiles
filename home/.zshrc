@@ -214,3 +214,6 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
 export PATH="/usr/local/opt/curl/bin:$PATH"
+
+
+eval "$(rbenv init -)"

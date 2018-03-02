@@ -45,7 +45,7 @@
     confg = config --global
     confls = config -l --includes
     rem = remote
-    inu = !git config user.name inuscript && git config user.email inuscript@gmail.com && git commit --amend --reset-author
+    inu = !git config user.name terrierscript && git config user.email 13282103+terrierscript@users.noreply.github.com && git commit --amend --reset-author
     meff = merge --ff-only
     ffm = merge --ff-only
     fa = fetch --all --prune
@@ -61,8 +61,7 @@
 	name = inuscript
 	email = inuscript@gmail.com
 [credential]
-	helper = osxkeychain
-	useHttpPath = true
+	#useHttpPath = true
 [merge "mergepbx"]
     name = Xcode project files merger
     driver = mergepbx %O %A %B
@@ -82,8 +81,8 @@
 [rerere]
 	enabled = true
 [user]
-        name = inuscript
-        email = inuscript@users.noreply.github.com
+	name = terrierscript
+  email = 13282103+terrierscript@users.noreply.github.com 
 [pager]
 	log = diff-highlight | less
 	show = diff-highlight | less
@@ -92,3 +91,5 @@
 	diffFilter = diff-highlight
 #[remote "origin"]
 	#fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+[credential]
+	helper = osxkeychain
