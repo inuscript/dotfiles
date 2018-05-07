@@ -113,7 +113,7 @@ compinit -u
 if [ -d /usr/local/opt/chruby ]; then
     source /usr/local/opt/chruby/share/chruby/chruby.sh
     source /usr/local/opt/chruby/share/chruby/auto.sh
-    chruby 2.2
+    chruby 2.3
 fi
 if [ -d /usr/local/share/chruby ]; then
     source /usr/local/share/chruby/chruby.sh
