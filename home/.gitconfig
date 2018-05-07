@@ -71,9 +71,10 @@
     clean = git-media-clean %f
     smudge = git-media-smudge %f
 [filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
     required = true
+	process = git-lfs filter-process
 [fetch]
 	prune = true
 [diff]
@@ -82,7 +83,7 @@
 	enabled = true
 [user]
 	name = terrierscript
-  email = 13282103+terrierscript@users.noreply.github.com 
+	email = 13282103+terrierscript@users.noreply.github.com
 [pager]
 	log = diff-highlight | less
 	show = diff-highlight | less
