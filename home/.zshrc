@@ -224,7 +224,7 @@ export PATH=$PATH:$GOPATH/bin
 # brew cask install android-sdk
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 
-# eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 # export LANG="ja_JP.utf8"
 
