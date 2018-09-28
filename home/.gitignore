@@ -13,3 +13,4 @@ Gruntfile
 .secret/
 npm-debug.log
 yarn-error.log
+.cache/
