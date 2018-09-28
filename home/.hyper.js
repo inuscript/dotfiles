@@ -107,12 +107,6 @@ module.exports = {
     // for environment variables
     env: {
       LANG: "ja_JP.UTF-8",
-      LC_COLLATE: "ja_JP.UTF-8",
-      LC_CTYPE: "ja_JP.UTF-8",
-      LC_MESSAGES: "ja_JP.UTF-8",
-      LC_MONETARY: "ja_JP.UTF-8",
-      LC_NUMERIC: "ja_JP.UTF-8",
-      LC_TIME: "ja_JP.UTF-8",
       LC_ALL: "ja_JP.UTF-8"
     },
 
@@ -141,7 +135,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: ["hyper-chesterish"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
