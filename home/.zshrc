@@ -48,10 +48,10 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-if [ -f ~/.nvm/nvm.sh ]; then
-    . ~/.nvm/nvm.sh
-    nvm alias default 0.8
-fi
+# if [ -f ~/.nvm/nvm.sh ]; then
+#     . ~/.nvm/nvm.sh
+#     nvm alias default 0.8
+# fi
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 
@@ -93,11 +93,14 @@ export PATH=$(brew --prefix)/sbin:$PATH
 export PATH=$(brew --prefix)/bin:$PATH
 export PATH=$(brew --prefix)/share/npm/bin:$PATH
 export PATH=$(brew --prefix ruby)/bin:$PATH
+export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
+export PATH=~/.gitcommands:$PATH
+
 #export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
 #export PATH=~/.cabal/bin:$PATH
 
 export EDITOR=$(which vim)
-export PATH=~/.gitcommands:$PATH
 
 # pig
 #export JAVA_HOME="$(/usr/libexec/java_home)"
@@ -110,16 +113,16 @@ autoload -U compinit
 compinit -u
 
 # chruby
-if [ -d /usr/local/opt/chruby ]; then
-    source /usr/local/opt/chruby/share/chruby/chruby.sh
-    source /usr/local/opt/chruby/share/chruby/auto.sh
-    chruby 2.3
-fi
-if [ -d /usr/local/share/chruby ]; then
-    source /usr/local/share/chruby/chruby.sh
-    source /usr/local/share/chruby/auto.sh
-#    chruby 2.2
-fi
+# if [ -d /usr/local/opt/chruby ]; then
+#     source /usr/local/opt/chruby/share/chruby/chruby.sh
+#     source /usr/local/opt/chruby/share/chruby/auto.sh
+#     chruby 2.3
+# fi
+# if [ -d /usr/local/share/chruby ]; then
+#     source /usr/local/share/chruby/chruby.sh
+#     source /usr/local/share/chruby/auto.sh
+# #    chruby 2.2
+# fi
 
 # include local
 if [ -f ~/.zsh_local ]; then
@@ -208,12 +211,14 @@ if [ -x "`which go`" ]; then
 fi
 
 #nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-export PATH="$HOME/.yarn/bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$PATH"
 
-export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
-export PATH="/usr/local/opt/curl/bin:$PATH"
 
+# brew cask install android-sdk
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 
 eval "$(rbenv init -)"
+
+export LANG="ja_JP.utf8"
