@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh configuration.
+
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -48,10 +49,10 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-if [ -f ~/.nvm/nvm.sh ]; then
-    . ~/.nvm/nvm.sh
-    nvm alias default 0.8
-fi
+# if [ -f ~/.nvm/nvm.sh ]; then
+#     . ~/.nvm/nvm.sh
+#     nvm alias default 0.8
+# fi
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 
@@ -86,18 +87,25 @@ bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
+
+
+BREW_PREFIX=`dirname $(dirname $(which brew))`
+# BREW_PREFIX_RUBY=`brew --prefix ruby`
 # for rabbitmq
-export PATH=$(brew --prefix)/sbin:$PATH
+export PATH=$BREW_PREFIX/sbin:$PATH
 
 # for brew
-export PATH=$(brew --prefix)/bin:$PATH
-export PATH=$(brew --prefix)/share/npm/bin:$PATH
-export PATH=$(brew --prefix ruby)/bin:$PATH
+export PATH=$BREW_PREFIX/bin:$PATH
+export PATH=$BREW_PREFIX/share/npm/bin:$PATH
+# export PATH=$BREW_PREFIX_RUBY/bin:$PATH
+export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
+export PATH=~/.gitcommands:$PATH
+
 #export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
 #export PATH=~/.cabal/bin:$PATH
 
 export EDITOR=$(which vim)
-export PATH=~/.gitcommands:$PATH
 
 # pig
 #export JAVA_HOME="$(/usr/libexec/java_home)"
@@ -110,16 +118,16 @@ autoload -U compinit
 compinit -u
 
 # chruby
-if [ -d /usr/local/opt/chruby ]; then
-    source /usr/local/opt/chruby/share/chruby/chruby.sh
-    source /usr/local/opt/chruby/share/chruby/auto.sh
-    chruby 2.3
-fi
-if [ -d /usr/local/share/chruby ]; then
-    source /usr/local/share/chruby/chruby.sh
-    source /usr/local/share/chruby/auto.sh
-#    chruby 2.2
-fi
+# if [ -d /usr/local/opt/chruby ]; then
+#     source /usr/local/opt/chruby/share/chruby/chruby.sh
+#     source /usr/local/opt/chruby/share/chruby/auto.sh
+#     chruby 2.3
+# fi
+# if [ -d /usr/local/share/chruby ]; then
+#     source /usr/local/share/chruby/chruby.sh
+#     source /usr/local/share/chruby/auto.sh
+# #    chruby 2.2
+# fi
 
 # include local
 if [ -f ~/.zsh_local ]; then
@@ -179,9 +187,9 @@ elif type compctl &>/dev/null; then
   compctl -K _npm_completion npm
 fi
 ###-end-npm-completion-###
-if [ -d ~/.zsh/git-flow-completion ]; then
-  source ~/.zsh/git-flow-completion/git-flow-completion.zsh
-fi
+# if [ -d ~/.zsh/git-flow-completion ]; then
+#   source ~/.zsh/git-flow-completion/git-flow-completion.zsh
+# fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -201,19 +209,25 @@ export PGDATA=/usr/local/var/postgres
 export GOPATH=$HOME/code/gopath
 export PATH=$PATH:$GOPATH/bin
 
-if [ -x "`which go`" ]; then
+# if [ -x "`which go`" ]; then
        export GOROOT=`go env GOROOT`
        export GOPATH=$HOME/code/go-local
        export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-fi
+# fi
 
 #nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-export PATH="$HOME/.yarn/bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$PATH"
 
-export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
-export PATH="/usr/local/opt/curl/bin:$PATH"
 
+# brew cask install android-sdk
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 
 eval "$(rbenv init -)"
+
+# export LANG="ja_JP.utf8"
+
+# if (which zprof > /dev/null 2>&1) ;then
+#   zprof
+# fi

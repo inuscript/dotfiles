@@ -83,7 +83,7 @@
 	enabled = true
 [user]
 	name = terrierscript
-  email = 13282103+terrierscript@users.noreply.github.com 
+	email = 13282103+terrierscript@users.noreply.github.com
 [pager]
 	log = diff-highlight | less
 	show = diff-highlight | less
