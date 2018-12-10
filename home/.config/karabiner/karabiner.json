@@ -101,18 +101,10 @@
                         },
                         {
                             "from": {
-                                "key_code": "japanese_pc_katakana"
-                            },
-                            "to": {
-                                "key_code": "left_command"
-                            }
-                        },
-                        {
-                            "from": {
                                 "key_code": "japanese_pc_nfer"
                             },
                             "to": {
-                                "key_code": "grave_accent_and_tilde"
+                                "key_code": "japanese_eisuu"
                             }
                         },
                         {
@@ -120,7 +112,7 @@
                                 "key_code": "japanese_pc_xfer"
                             },
                             "to": {
-                                "key_code": "right_command"
+                                "key_code": "japanese_kana"
                             }
                         },
                         {
@@ -185,7 +177,7 @@
                                 "key_code": "japanese_pc_katakana"
                             },
                             "to": {
-                                "key_code": "left_command"
+                                "key_code": "japanese_kana"
                             }
                         },
                         {
@@ -193,7 +185,7 @@
                                 "key_code": "japanese_pc_nfer"
                             },
                             "to": {
-                                "key_code": "grave_accent_and_tilde"
+                                "key_code": "japanese_kana"
                             }
                         },
                         {
@@ -201,7 +193,7 @@
                                 "key_code": "japanese_pc_xfer"
                             },
                             "to": {
-                                "key_code": "right_command"
+                                "key_code": "japanese_eisuu"
                             }
                         },
                         {
