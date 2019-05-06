@@ -7,7 +7,7 @@ module.exports = {
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: "stable",
-    opacity: 0.9,
+    opacity: 0.95,
     // default font size in pixels for all tabs
     fontSize: 18,
 
@@ -105,10 +105,10 @@ module.exports = {
     shellArgs: ["--login"],
 
     // for environment variables
-    env: {
-      LANG: "ja_JP.UTF-8",
-      LC_ALL: "ja_JP.UTF-8"
-    },
+    // env: {
+    //   LANG: "ja_JP.UTF-8",
+    //   LC_ALL: "ja_JP.UTF-8"
+    // },
 
     // set to `false` for no bell
     bell: "SOUND",
