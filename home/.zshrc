@@ -101,7 +101,8 @@ export PATH=$BREW_PREFIX/share/npm/bin:$PATH
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
 export PATH=~/.gitcommands:$PATH
-
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 #export PATH=$(brew --prefix josegonzalez/php/php54)/bin:$PATH
 #export PATH=~/.cabal/bin:$PATH
 
@@ -224,7 +225,6 @@ export PATH=$PATH:$GOPATH/bin
 # brew cask install android-sdk
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 
-eval "$(rbenv init -)"
 
 # export LANG="ja_JP.utf8"
 
