@@ -608,6 +608,14 @@
                         },
                         {
                             "from": {
+                                "key_code": "left_gui"
+                            },
+                            "to": {
+                                "key_code": "left_option"
+                            }
+                        },
+                        {
+                            "from": {
                                 "key_code": "left_option"
                             },
                             "to": {
@@ -620,22 +628,6 @@
                             },
                             "to": {
                                 "key_code": "right_command"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_control"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_gui"
-                            },
-                            "to": {
-                                "key_code": "left_option"
                             }
                         }
                     ]
