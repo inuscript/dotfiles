@@ -345,9 +345,12 @@
                 }
             ],
             "name": "Customized profile",
+<<<<<<< HEAD
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
+=======
+>>>>>>> 7b0bfca1ecb0530e9115ee3dc586b5147546c256
             "selected": true,
             "simple_modifications": [
                 {
@@ -612,6 +615,14 @@
                             },
                             "to": {
                                 "key_code": "left_command"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_control"
+                            },
+                            "to": {
+                                "key_code": "left_control"
                             }
                         },
                         {
