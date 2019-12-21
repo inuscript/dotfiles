@@ -207,13 +207,13 @@ export PGDATA=/usr/local/var/postgres
 #set_term_bgcolor 0 0 40
 
 #Go
-export GOPATH=$HOME/code/gopath
-export PATH=$PATH:$GOPATH/bin
+#export GOPATH=$HOME/code/gopath
+#export PATH=$PATH:$GOPATH/bin
 
 # if [ -x "`which go`" ]; then
-       export GOROOT=`go env GOROOT`
-       export GOPATH=$HOME/code/go-local
-       export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+#       export GOROOT=`go env GOROOT`
+#       export GOPATH=$HOME/code/go-local
+#       export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # fi
 
 #nodebrew
